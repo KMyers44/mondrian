@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Mondrian</title>
+
+        <link rel="stylesheet" type="text/css" href="mondrian.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <p>Pick a color to paint the canvas</p>
+
+            <div class="main">
+
+                <div class="color_selection">
+                    <div id="red" class="colors"></div>
+                    <div id="yellow" class="colors"></div>
+                    <div id="blue" class="colors"></div>
+                    <div id="green" class="colors"></div>
+                </div>
+
+                <div class="grid">
+                    <div id="row-1">
+                        <div id="row-1-1" class="line"></div>
+                        <div id="row-1-2" class="line"></div>
+                        <div id="row-1-3" class="line"></div>
+                        <div id="row-1-4" class="line"></div>
+                    </div>
+
+                    <div id="row-2">
+                        <div id="row-2-1" class="line"></div>
+                        <div id="row-2-2" class="line"></div>
+                        <div id="row-2-3" class="line"></div>
+                        <div id="row-2-4" class="line"></div>
+                    </div>
+
+                    <div id="row-3">
+                        <div id="row-3-1" class="line"></div>
+                        <div id="row-3-2" class="line"></div>
+                        <div id="row-3-3" class="line"></div>
+                        <div id="row-3-4" class="line"></div>
+                    </div>
+
+                    <div id="row-4">
+                        <div id="row-4-1" class="line"></div>
+                        <div id="row-4-2" class="line"></div>
+                        <div id="row-4-3" class="line"></div>
+                        <div id="row-4-4" class="line"></div>
+                    </div>
+                </div>
+                
+                <div class="clear"></div>
+
+            </div>
+        </div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+
+                var colors = $('.colors');
+                var line = $('.line');
+                var coloredSquare = "";
+
+               colors.on('click', function () {
+                    coloredSquare = $(this).css('background-color');
+                });
+
+                line.on('click', function () {
+                    $(this).css('background-color', coloredSquare);
+                });
+
+            });
+
+        </script>
+    </body>
+</html
