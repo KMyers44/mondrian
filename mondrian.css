@@ -1,9 +1,8 @@
 body {
-    margin-top: -27px;
+    background-color: rgb(249, 244, 244);
 }
 
 .container {
-    background-color: rgb(249, 244, 244);
     height: 100%;
 }
 
@@ -27,7 +26,7 @@ p {
     width: 100px;
     background-color: rgb(249, 249, 253);
     float: left;
-    box-shadow: 1px 1px 1px 1px black;
+    box-shadow: 0px 0px 2px 1px black;
 }
 
 .colors {
