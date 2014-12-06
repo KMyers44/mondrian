@@ -118,3 +118,9 @@ p {
 .clear {
     clear: both;
 }
+
+button {
+    height: 35px;
+    width: 100px;
+    font-size: 20px;
+}
